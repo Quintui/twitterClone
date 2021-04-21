@@ -1,110 +1,42 @@
 {
- "tweets": [
-   {
-     "_id": "6078b61579d5c30fc789f98b",
-     "text": "Veniam do sit elit quis adipisicing esse fugiat proident esse enim. Ex consectetur ad officia fugiat exercitation mollit excepteur exercitation. Enim voluptate quis adipisicing elit ipsum eu ipsum mollit eiusmod labore laboris eu. Enim nostrud ex qui qui deserunt deserunt sint irure. Deserunt nulla pariatur sint in proident pariatur exercitation cillum eu dolore aliquip est sit.",
-     "user": {
-       "fullname": "Jones Parker ",
-       "userName": "leonard",
-       "avatarUrl": "https://source.unsplash.com/random/100x100?6"
-     }
-   },
-   {
-     "_id": "6078b6150e10f7144c962d3f",
-     "text": "Labore et aliquip pariatur est ad. Est incididunt ut et est. Excepteur do sunt aute dolore qui eu sunt mollit fugiat sint. Id nostrud ea minim incididunt cillum pariatur. Exercitation sint deserunt est excepteur enim occaecat magna ipsum velit aute.",
-     "user": {
-       "fullname": "Bradshaw Dalton ",
-       "userName": "norma",
-       "avatarUrl": "https://source.unsplash.com/random/100x100?4"
-     }
-   },
-   {
-     "_id": "6078b6155f1e04856060b64a",
-     "text": "Ut sunt mollit velit aliquip laborum. Voluptate pariatur aliqua qui dolore ex nostrud quis culpa cillum Lorem non aliquip. Id adipisicing mollit cillum qui excepteur minim occaecat ullamco ullamco aliqua deserunt non voluptate nostrud. Magna ullamco occaecat culpa cillum nulla in non aliqua tempor esse. Ipsum velit pariatur ad officia.",
-     "user": {
-       "fullname": "Kara Gay ",
-       "userName": "cervantes",
-       "avatarUrl": "https://source.unsplash.com/random/100x100?5"
-     }
-   },
-   {
-     "_id": "6078b6150227f7d8eeb73dbd",
-     "text": "Quis amet non amet cupidatat ullamco non exercitation ex. Nulla minim exercitation amet dolor do quis qui. Et ut cupidatat deserunt duis reprehenderit magna aliquip anim id. Do voluptate deserunt consequat exercitation adipisicing esse velit ipsum cupidatat cillum aliqua sunt. Ullamco ut ex sit exercitation.",
-     "user": {
-       "fullname": "Jeanie Randolph ",
-       "userName": "pate",
-       "avatarUrl": "https://source.unsplash.com/random/100x100?7"
-     }
-   },
-   {
-     "_id": "6078b6151814e5244b4495c0",
-     "text": "Veniam sit pariatur officia id eu. Magna sit qui enim fugiat anim excepteur consequat adipisicing qui pariatur minim duis aute. Anim dolor exercitation proident duis do mollit ipsum incididunt enim ex sint sint. Elit laborum sint aliqua laborum do nulla mollit ea ea deserunt consectetur. Reprehenderit reprehenderit veniam magna laborum elit eiusmod irure dolor quis dolor.",
-     "user": {
-       "fullname": "Deanne Walters ",
-       "userName": "orr",
-       "avatarUrl": "https://source.unsplash.com/random/100x100?3"
-     }
-   },
-   {
-     "_id": "6078b615f8f25e866d1ac753",
-     "text": "Mollit dolore ex laboris aliquip sint cupidatat culpa amet duis enim proident incididunt eiusmod. Incididunt pariatur deserunt consectetur ut anim magna aliqua exercitation minim. Anim amet fugiat adipisicing pariatur duis et ad quis aliquip qui. Laborum enim culpa eiusmod magna labore incididunt laboris ea sunt amet voluptate exercitation adipisicing. Voluptate veniam ut anim ut est proident fugiat pariatur ullamco laborum veniam ex ipsum.",
-     "user": {
-       "fullname": "Lorna Knapp ",
-       "userName": "katina",
-       "avatarUrl": "https://source.unsplash.com/random/100x100?7"
-     }
-   },
-   {
-     "_id": "6078b61513b7c4a59ca70ec0",
-     "text": "Ullamco veniam proident ut proident. Incididunt elit ullamco cupidatat aliqua tempor consectetur ipsum. Non eiusmod ex ea consequat duis nulla pariatur id eu dolor reprehenderit sit ipsum. Exercitation proident enim esse occaecat elit voluptate ex velit. Velit exercitation duis consequat in ut.",
-     "user": {
-       "fullname": "Larsen Lynn ",
-       "userName": "lupe",
-       "avatarUrl": "https://source.unsplash.com/random/100x100?1"
-     }
-   },
-   {
-     "_id": "6078b615177723defc5b365d",
-     "text": "Reprehenderit qui laboris commodo esse laboris velit elit aute esse consectetur do et. Sit consequat consequat minim proident sunt. Laboris fugiat laborum labore reprehenderit aute sint enim excepteur eiusmod fugiat incididunt. Id dolor fugiat duis exercitation mollit. Cupidatat ea velit amet esse eu esse non nulla.",
-     "user": {
-       "fullname": "Etta Garner ",
-       "userName": "pam",
-       "avatarUrl": "https://source.unsplash.com/random/100x100?3"
-     }
-   },
-   {
-     "_id": "6078b615cbc19afbc9c815e2",
-     "text": "Est Lorem nulla reprehenderit laborum ea veniam ea officia. Fugiat deserunt excepteur nostrud et ad nulla irure exercitation exercitation tempor irure. Amet est sint aute ex do fugiat aliqua pariatur sit exercitation deserunt. Ut do veniam et ipsum do mollit et esse aute consectetur excepteur. Quis adipisicing commodo ut adipisicing aliquip.",
-     "user": {
-       "fullname": "Barbara Chaney ",
-       "userName": "sabrina",
-       "avatarUrl": "https://source.unsplash.com/random/100x100?9"
-     }
-   },
-   {
-     "_id": "6078b6155ba16a495a452249",
-     "text": "Officia nostrud consectetur consectetur nulla. Dolore nulla qui duis magna exercitation aliquip. Consequat proident incididunt aliqua nisi. In ut adipisicing magna ad exercitation ex officia fugiat aliquip magna veniam. Exercitation reprehenderit excepteur et laborum adipisicing ut pariatur et exercitation officia qui nisi enim.",
-     "user": {
-       "fullname": "Colon Waller ",
-       "userName": "callahan",
-       "avatarUrl": "https://source.unsplash.com/random/100x100?5"
-     }
-   }
- ],
+  "tweets": [
+    {
+      "id": 1,
+      "_id": "6078b61579d5c30fc789f98b",
+      "text": "Veniam do sit elit quis adipisicing esse fugiat proident esse enim. Ex consectetur ad officia fugiat exercitation mollit excepteur exercitation. Enim voluptate quis adipisicing elit ipsum eu ipsum mollit eiusmod labore laboris eu. Enim nostrud ex qui qui deserunt deserunt sint irure. Deserunt nulla pariatur sint in proident pariatur exercitation cillum eu dolore aliquip est sit.",
+      "user": {
+        "fullname": "Jones Parker ",
+        "userName": "leonard",
+        "avatarUrl": "https://source.unsplash.com/random/100x100?6"
+      }
+    },
+    {
+      "_id": "rsko417nzvc",
+      "text": "фывфвф",
+      "user": {
+        "fullname": "Test Name",
+        "userName": "testUser",
+        "avatarUrl": "https://source.unsplash.com/random/100x100?5"
+      },
+      "id": 2
+    }
+  ],
   "topics": [
     {
       "name": "JOJO",
       "count": "73813",
       "_id": "6078b61579d5c30fc789asd8b"
-    },  {
+    },
+    {
       "name": "Animal",
       "count": "12423",
       "_id": "6078bnj579d5c30fc789asd8b"
-    },  {
+    },
+    {
       "name": "Houses",
       "count": "1662",
       "_id": "jk2sl61579d5c30fc789asd8b"
-    } ,
+    },
     {
       "name": "RelationShip",
       "count": "92102",

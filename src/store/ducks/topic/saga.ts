@@ -5,7 +5,8 @@ import {
   TopicActionType,
 } from "./actionCreactors";
 import { TopicApi } from "../../../services/api/TopicApi";
-import { LoadingState, TopicState } from "./contracts/types";
+import { TopicState } from "./contracts/types";
+import { LoadingState } from "../../commonTypes";
 
 function* TopicWorker() {
   try {

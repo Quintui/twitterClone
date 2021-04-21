@@ -1,8 +1,9 @@
 import { call, put, takeEvery } from "redux-saga/effects";
 import { setTweetAction, setTweetLoadingState } from "./actionCreactors";
 import { TweetApi } from "../../../services/api/TweetApi";
-import { LoadingState, TweetState } from "./contracts/types";
+import { TweetState } from "./contracts/types";
 import { FetchTweetActionType, TweetActionType } from "./contracts/actionsType";
+import { LoadingState } from "../../commonTypes";
 
 function* TweetWorker(action: FetchTweetActionType) {
   try {

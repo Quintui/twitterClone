@@ -1,5 +1,6 @@
 import { StateType } from "../../store";
-import { LoadingState, TweetState } from "./contracts/types";
+import { TweetState } from "./contracts/types";
+import { LoadingState } from "../../commonTypes";
 
 export const selectTweet = (state: StateType): TweetState => state.tweet;
 

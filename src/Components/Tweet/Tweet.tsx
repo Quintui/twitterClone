@@ -27,14 +27,13 @@ interface TweetProps {
 const useTweetStyle = makeStyles((theme) =>
   createStyles({
     TweetMainWrapper: {
-      cursor: "pointer",
-
       "&:hover": {
         backgroundColor: "#f5f5f5",
         transition: ".2s all ease-in-out",
       },
     },
     TweetWrapper: {
+      width: "100%",
       display: "flex",
       marginLeft: 20,
       marginTop: 15,
@@ -79,7 +78,7 @@ const Tweet: FC<TweetProps> = ({ text, user, _id }): React.ReactElement => {
               <span style={{ fontSize: 15 }}>{user.userName}</span>
             </Typography>
             <Typography
-              style={{ fontSize: 15, width: "90%" }}
+              style={{ fontSize: 15, width: "90%", minHeight: 40 }}
               variant={"body1"}
             >
               {text}

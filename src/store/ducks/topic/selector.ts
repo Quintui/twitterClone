@@ -1,5 +1,5 @@
 import { StateType } from "../../store";
-import { LoadingState } from "./contracts/types";
+import { LoadingState } from "../../commonTypes";
 
 export const selectTopic = (state: StateType) => state.topics;
 

@@ -1,4 +1,4 @@
-import { LoadingState, TweetState } from "./contracts/types";
+import { TweetState } from "./contracts/types";
 
 import {
   FetchTweetActionType,
@@ -6,6 +6,7 @@ import {
   SetTweetLoadingStateInterface,
   TweetActionType,
 } from "./contracts/actionsType";
+import { LoadingState } from "../../commonTypes";
 
 export const setTweetAction = (
   payload: TweetState["data"]

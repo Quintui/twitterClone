@@ -1,6 +1,7 @@
-import { LoadingState, TopicState } from "./contracts/types";
+import { TopicState } from "./contracts/types";
 import produce, { Draft } from "immer";
 import { ActionType, TopicActionType } from "./actionCreactors";
+import { LoadingState } from "../../commonTypes";
 
 const initialTweetState: TopicState = {
   items: [],

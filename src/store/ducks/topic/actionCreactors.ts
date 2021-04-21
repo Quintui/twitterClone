@@ -1,5 +1,6 @@
-import { LoadingState, TopicState } from "./contracts/types";
+import { TopicState } from "./contracts/types";
 import { Action } from "redux";
+import { LoadingState } from "../../commonTypes";
 
 export enum TopicActionType {
   SET_TOPICS = "tweet/SET_TOPICS",

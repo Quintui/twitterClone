@@ -1,5 +1,7 @@
-export enum LoadingState {
-  LOADED = "LOADED",
+import { LoadingState } from "../../../commonTypes";
+
+export enum AddTweetLoadingState {
+  ADDED = "ADDED",
   LOADING = "LOADING",
   ERROR = "ERROR",
   NEVER = "NEVER",
@@ -18,4 +20,5 @@ export interface Tweet {
 export interface TweetState {
   items: Tweet[];
   loadingState: LoadingState;
+  addTweetLoadingState: AddTweetLoadingState;
 }

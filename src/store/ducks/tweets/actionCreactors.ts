@@ -1,25 +1,14 @@
-import { LoadingState, TweetState } from "./contracts/types";
-import { Action } from "redux";
-
-export enum TweetActionType {
-  SET_TWEETS = "tweet/SET_TWEETS",
-  FETCH_TWEETS = "tweet/FETCH_TWEETS",
-  SET_LOADING_STATE = "tweet/SET_LOADING_STATE",
-}
-
-export interface SetTweetsActionType extends Action<TweetActionType> {
-  type: TweetActionType.SET_TWEETS;
-  payload: TweetState["items"];
-}
-
-export interface FetchTweetsActionType extends Action<TweetActionType> {
-  type: TweetActionType.FETCH_TWEETS;
-}
-
-export interface SetTweetsLoadingStateInterface {
-  type: TweetActionType.SET_LOADING_STATE;
-  payload: LoadingState;
-}
+import { AddTweetLoadingState, Tweet, TweetState } from "./contracts/types";
+import {
+  AddTweetActionType,
+  AddTweetLoadingStateType,
+  FetchAddTweetType,
+  FetchTweetsActionType,
+  SetTweetsActionType,
+  SetTweetsLoadingStateInterface,
+  TweetActionType,
+} from "./contracts/actionTypes";
+import { LoadingState } from "../../commonTypes";
 
 export const setTweetAction = (
   payload: TweetState["items"]
@@ -39,7 +28,19 @@ export const fetchTweetsAction = (): FetchTweetsActionType => ({
   type: TweetActionType.FETCH_TWEETS,
 });
 
-export type ActionType =
-  | SetTweetsActionType
-  | FetchTweetsActionType
-  | SetTweetsLoadingStateInterface;
+export const addTweetAction = (payload: Tweet): AddTweetActionType => ({
+  type: TweetActionType.ADD_TWEET,
+  payload,
+});
+
+export const addTweetLoadingStateType = (
+  payload: AddTweetLoadingState
+): AddTweetLoadingStateType => ({
+  type: TweetActionType.ADD_TWEET_LOADING_STATE,
+  payload,
+});
+
+export const fetchAddTweetAction = (payload: string): FetchAddTweetType => ({
+  type: TweetActionType.FETCH_ADD_TWEET,
+  payload,
+});

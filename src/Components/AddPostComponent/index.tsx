@@ -10,10 +10,13 @@ import { CircularProgress } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import { useAddPostStyle } from "./style";
+import { useDispatch } from "react-redux";
+import { fetchAddTweetAction } from "../../store/ducks/tweets/actionCreactors";
 
 const MAX_LENGTH = 280;
 
 const AddPost = () => {
+  const dispatch = useDispatch();
   const classes = useAddPostStyle();
   const [value, setValue] = useState<string>("");
 
@@ -26,6 +29,7 @@ const AddPost = () => {
   const limitedCount = MAX_LENGTH - value.length;
 
   const handleAddTweet = (): void => {
+    dispatch(fetchAddTweetAction(value));
     setValue("");
   };
 
