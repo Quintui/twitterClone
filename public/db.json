@@ -9,17 +9,9 @@
         "userName": "leonard",
         "avatarUrl": "https://source.unsplash.com/random/100x100?6"
       }
-    },
-    {
-      "_id": "rsko417nzvc",
-      "text": "фывфвф",
-      "user": {
-        "fullname": "Test Name",
-        "userName": "testUser",
-        "avatarUrl": "https://source.unsplash.com/random/100x100?5"
-      },
-      "id": 2
     }
+
+   
   ],
   "topics": [
     {
