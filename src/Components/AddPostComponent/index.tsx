@@ -7,20 +7,25 @@ import IconButton from "@material-ui/core/IconButton";
 import ImageIcon from "@material-ui/icons/Image";
 import MoodIcon from "@material-ui/icons/Mood";
 import { CircularProgress } from "@material-ui/core";
+import Alert from "@material-ui/lab/Alert";
+import AlertTitle from "@material-ui/lab/AlertTitle";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import { useAddPostStyle } from "./style";
-import {useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchAddTweetAction } from "../../store/ducks/tweets/actionCreactors";
-import {selectIsAddTweetStateError, selectIsAddTweetStateLoading} from "../../store/ducks/tweets/selector";
+import {
+  selectIsAddTweetStateError,
+  selectIsAddTweetStateLoading,
+} from "../../store/ducks/tweets/selector";
 
 const MAX_LENGTH = 280;
 
 const AddPost = () => {
   const dispatch = useDispatch();
   const classes = useAddPostStyle();
-  const isLoading = useSelector(selectIsAddTweetStateLoading)
-  const isError = useSelector(selectIsAddTweetStateError)
+  const isLoading = useSelector(selectIsAddTweetStateLoading);
+  const isError = useSelector(selectIsAddTweetStateError);
   const [value, setValue] = useState<string>("");
 
   const onChangeValue = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -70,7 +75,7 @@ const AddPost = () => {
               {value && (
                 <>
                   <span className={classes.counter}>
-                    {textLimitPrecent >= 100 ? limitedCount : value.length}
+                    {textLimitPrecent > 100 ? limitedCount : value.length}
                   </span>
                   <div className={classes.CircularProg}>
                     <CircularProgress
@@ -94,16 +99,24 @@ const AddPost = () => {
                 style={{ borderRadius: 30 }}
                 color={"primary"}
                 variant={"contained"}
-                disabled={isLoading || textLimitPrecent > 100 || value.length < 1  && true}
+                disabled={
+                  isLoading ||
+                  textLimitPrecent > 100 ||
+                  (value.length < 1 && true)
+                }
                 onClick={handleAddTweet}
               >
-                Tweet
+                {isLoading ? (
+                  <CircularProgress size={15} color="inherit" />
+                ) : (
+                  "Tweet"
+                )}
               </Button>
             </div>
-            {
-              isError? <Alert> Error while  adding tweet </Alert>
-            }
           </div>
+          {isError ? (
+            <Alert severity="error">Error while adding tweet</Alert>
+          ) : null}
         </Grid>
       </Grid>
     </Paper>

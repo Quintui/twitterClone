@@ -11,8 +11,8 @@
       }
     },
     {
-      "_id": "6kztenjtl6n",
-      "text": "тестовый пост",
+      "_id": "mt9gk7xacv",
+      "text": "Тестовый твит ",
       "user": {
         "fullname": "Test Name",
         "userName": "testUser",
@@ -21,24 +21,14 @@
       "id": 2
     },
     {
-      "_id": "lz4cu78xh7",
-      "text": "",
+      "_id": "qlt4e9d74fm",
+      "text": "Тестовый твит \n",
       "user": {
         "fullname": "Test Name",
         "userName": "testUser",
         "avatarUrl": "https://source.unsplash.com/random/100x100?5"
       },
       "id": 3
-    },
-    {
-      "_id": "9lbc1p4bdy7",
-      "text": "wer",
-      "user": {
-        "fullname": "Test Name",
-        "userName": "testUser",
-        "avatarUrl": "https://source.unsplash.com/random/100x100?5"
-      },
-      "id": 4
     }
   ],
   "topics": [

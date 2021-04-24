@@ -38,6 +38,7 @@ export const useAddPostStyle = makeStyles((theme) =>
     AddFormTweetAction: {
       display: "flex",
       justifyContent: "space-between",
+      marginBottom: 15,
     },
     CircularProg: {
       marginRight: 10,
