@@ -10,14 +10,17 @@ import { CircularProgress } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import { useAddPostStyle } from "./style";
-import { useDispatch } from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import { fetchAddTweetAction } from "../../store/ducks/tweets/actionCreactors";
+import {selectIsAddTweetStateError, selectIsAddTweetStateLoading} from "../../store/ducks/tweets/selector";
 
 const MAX_LENGTH = 280;
 
 const AddPost = () => {
   const dispatch = useDispatch();
   const classes = useAddPostStyle();
+  const isLoading = useSelector(selectIsAddTweetStateLoading)
+  const isError = useSelector(selectIsAddTweetStateError)
   const [value, setValue] = useState<string>("");
 
   const onChangeValue = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -91,12 +94,15 @@ const AddPost = () => {
                 style={{ borderRadius: 30 }}
                 color={"primary"}
                 variant={"contained"}
-                disabled={textLimitPrecent > 100 && true}
+                disabled={isLoading || textLimitPrecent > 100 || value.length < 1  && true}
                 onClick={handleAddTweet}
               >
                 Tweet
               </Button>
             </div>
+            {
+              isError? <Alert> Error while  adding tweet </Alert>
+            }
           </div>
         </Grid>
       </Grid>

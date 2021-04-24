@@ -9,9 +9,37 @@
         "userName": "leonard",
         "avatarUrl": "https://source.unsplash.com/random/100x100?6"
       }
+    },
+    {
+      "_id": "6kztenjtl6n",
+      "text": "тестовый пост",
+      "user": {
+        "fullname": "Test Name",
+        "userName": "testUser",
+        "avatarUrl": "https://source.unsplash.com/random/100x100?5"
+      },
+      "id": 2
+    },
+    {
+      "_id": "lz4cu78xh7",
+      "text": "",
+      "user": {
+        "fullname": "Test Name",
+        "userName": "testUser",
+        "avatarUrl": "https://source.unsplash.com/random/100x100?5"
+      },
+      "id": 3
+    },
+    {
+      "_id": "9lbc1p4bdy7",
+      "text": "wer",
+      "user": {
+        "fullname": "Test Name",
+        "userName": "testUser",
+        "avatarUrl": "https://source.unsplash.com/random/100x100?5"
+      },
+      "id": 4
     }
-
-   
   ],
   "topics": [
     {

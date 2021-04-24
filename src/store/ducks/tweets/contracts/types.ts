@@ -1,7 +1,7 @@
 import { LoadingState } from "../../../commonTypes";
 
 export enum AddTweetLoadingState {
-  ADDED = "ADDED",
+  CLEAN = "CLEAN",
   LOADING = "LOADING",
   ERROR = "ERROR",
   NEVER = "NEVER",
